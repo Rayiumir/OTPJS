@@ -30,10 +30,10 @@ main.container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding-top: 20px;
 }
 
-.input_fields input{
+.input_fields{
     width: 100%;
     height: auto;
     display: flex;
@@ -41,13 +41,23 @@ main.container{
     justify-content: space-evenly;
 }
 
-.input_fields input::-webkit-outer-spin-button,
-.input_fields input::-webkit-inner-spin-button {
+.input_fields input{
+    border: none;
+    max-width: 20%;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 25px;
+}
+
+.input_fields input::-webkit-inner-spin-button,
+.input_fields input::-webkit-outer-spin-button{
     display: none;
 }
 
 .input_fields input:focus{
-    outline: 1.5px solid #00b991;
+    outline: 2px solid #00b991;
     outline-offset: 2px;
 }
 
@@ -62,7 +72,7 @@ form button{
     border-radius: 5px;
     pointer-events: none;
     cursor: pointer;
-    background: #e9d585;
+    background: #f1c40f;
     transition: all 0.2s ease;
 }
 
